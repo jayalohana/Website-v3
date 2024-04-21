@@ -5,7 +5,7 @@ import { title } from 'process'
 
 function About() {
     return (
-       <div>
+       <div className=''>
             <HoverEffect items={about} />
        </div>
     )
