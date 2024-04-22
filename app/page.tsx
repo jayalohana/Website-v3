@@ -5,9 +5,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <MaxWidthWrapper className=" mt-10 mb-10 md:flex border h-screen">
+    <MaxWidthWrapper className="  md:grid grid-cols-2 border h-full overflow-y-hidden">
       <Header />
-      <Scroll />
+      <div className="max-h-screen top-0 sticky overflow-y-auto">
+        <Scroll />
+      </div>
     </MaxWidthWrapper>
   );
 }

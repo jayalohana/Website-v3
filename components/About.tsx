@@ -5,9 +5,9 @@ import { title } from 'process'
 
 function About() {
     return (
-       <Card>
+       <Card className='mb-40'>
             <CardHeader>
-                <CardDescription>As a programmer extraordinaire, I juggle two roles: slaying bugs as an intern QA Developer at theScore and weaving code magic as a Software Developer at Fibra, Software development is my playground, and I\'m always hungry for new challenges to devour. Let\'s team up and code the world into a better place! </CardDescription>
+                <CardDescription className='text-md'>As a programmer extraordinaire, I juggle two roles: slaying bugs as an intern QA Developer at theScore and weaving code magic as a Software Developer at Fibra, Software development is my playground, and I\'m always hungry for new challenges to devour. Let\'s team up and code the world into a better place! </CardDescription>
             </CardHeader>
        </Card>
     )
