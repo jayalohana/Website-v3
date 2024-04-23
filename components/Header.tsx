@@ -12,6 +12,23 @@ function Header() {
           <Navbar />
         </div>
       </div>
+      <ul className='ml-1 mt-8 flex items-center'>
+        <li className='mr-5 text-xs shrink-0'>
+          <a className='block hover:text-slate-200' href='#'>
+            <span>Github</span>
+          </a>
+        </li>
+        <li className='mr-5 text-xs shrink-0'>
+          <a className='block hover:text-slate-200' href='#'>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li className='mr-5 text-xs shrink-0'>
+          <a className='block hover:text-slate-200' href='#'>
+            <span>Email</span>
+          </a>
+        </li>
+      </ul>
       </div>
       
   )
