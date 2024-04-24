@@ -6,7 +6,7 @@ import Projects from './Projects'
 
 function Scroll() {
   return (
-    <div className='w-full border border-black mt-20 md:w-1/2'>
+    <div className='w-full border border-black mt-20 lg:w-1/2'>
         
           <About />
           <Exp />

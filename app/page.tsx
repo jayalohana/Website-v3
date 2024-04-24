@@ -5,9 +5,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <MaxWidthWrapper className=" md:flex md:justify-between gap-5">
+    <MaxWidthWrapper className=" lg:flex lg:justify-between gap-5">
       <Header />
-      
        <Scroll />
     </MaxWidthWrapper>
   );
