@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-       <div className='mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24'>
+       <section id='about' className='mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24'>
             <div className='sticky top-0 z-20 -mx-6 mb-4 w-screen bg-black/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto md:max-auto lg:w-full lg:py-0 ly:px-0 lg:opacity-0'>
                 <h2 className='text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only'>About</h2>
             </div>
@@ -11,7 +11,7 @@ function About() {
                 <p className='mb-4'>I excel in backend development, proficiently utilizing technologies such as Node.js, Spring Boot, and Python, alongside databases like PostgreSQL and MySQL. My toolkit is further enhanced by expertise in developer tools like AWS, Docker, and GraphQL, which I leverage to build scalable, efficient, and reliable systems.</p>
                 <p className='mb-4'>My project work includes creating PageMind, an AI-driven platform that revolutionizes how users interact with digital documents, and leading my team to a first-prize victory at yuHacks 2022 with a web application that significantly increased engagement for non-profits. These projects not only deepen my development skills but also highlight my ability to lead and innovate in the tech space.</p>
             </div>
-       </div>
+       </section>
     )
 }
 
