@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { Github, LinkedIn, Email } from './Socials';
 
 function Header() {
   return (
@@ -12,20 +13,21 @@ function Header() {
           <Navbar />
         </div>
       </div>
+      
       <ul className='ml-1 mt-8 flex items-center'>
         <li className='mr-5 text-xs shrink-0'>
           <a className='block hover:text-slate-200' href='#'>
-            <span>Github</span>
+            <span><Github /></span>
           </a>
         </li>
         <li className='mr-5 text-xs shrink-0'>
           <a className='block hover:text-slate-200' href='#'>
-            <span>LinkedIn</span>
+            <span><LinkedIn /></span>
           </a>
         </li>
         <li className='mr-5 text-xs shrink-0'>
           <a className='block hover:text-slate-200' href='#'>
-            <span>Email</span>
+            <span><Email /></span>
           </a>
         </li>
       </ul>
