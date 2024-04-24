@@ -82,9 +82,9 @@ const Projects = () => {
           </li>
         ))}
       </ul>
-      <a className='inline-flex items-center text-slate-200 leading-tight font-semibold group'>
-          <span className='border-b border-transparent pb-px transition group-hover:text-white/70'>
-            View Full Project Archive
+      <a className='inline-flex items-center text-slate-200 leading-tight font-semibold group' href='/project_archive'>
+          <span className='border-b border-transparent pb-px transition group-hover:text-white/70 flex'>
+            View Full Project Archive <ArrowUp />
           </span>
       </a>
     </div>
