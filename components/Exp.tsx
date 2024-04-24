@@ -1,4 +1,4 @@
-import ArrowUp from "./ui/ArrowUp"
+import {ArrowUp} from "./ui/ArrowUp"
 import Aradhya_Singh_Website from '../public/static/Resume/Aradhya_Singh_Website.pdf'
 
 

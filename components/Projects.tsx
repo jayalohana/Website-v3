@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ArrowUp from './ui/ArrowUp';
+import {ArrowUp} from './ui/ArrowUp';
 
 
 const projects = [
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'Data Visualizer',
     description: 'EECS 3311 project for York University in Fall 2022 analyzing World Bank API data in visual format.',
-    tools: ['Java, REST APIs, Java Swing'],
+    tools: ['Java', 'REST APIs', 'Java Swing'],
     imagePath: '/static/Images/3311.jpg',
     url:"https://github.com/aradhyas8/World-Bank-Analysis"
   }
@@ -77,7 +77,7 @@ const Projects = () => {
               ))}
                 </ul>
               </div>
-                <Image height={40} width={200} src={project.imagePath} alt='project-img' className='rounded transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-3 md:text-7xl sm:translate-y-1 border-slate-200/10 group:hover:border-slate-200/30 ' />
+                <Image height={40} width={200} src={project.imagePath} alt='project-img' className='rounded-xl transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-3 md:text-7xl sm:translate-y-1 border border-slate-200/20 group:hover:border-slate-200/30 ' />
             </div>
           </li>
         ))}
