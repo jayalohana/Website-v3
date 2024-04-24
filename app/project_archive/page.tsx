@@ -1,5 +1,15 @@
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper"
-import { ArrowBack } from "@/components/ui/ArrowUp"
+import { ArrowBack, ArrowUp } from "@/components/ui/ArrowUp"
+
+
+const projects = [
+    {
+        year: '2023',
+        project: 'PageMind',
+        buildWith: ['Typescript','Nextjs', 'Prisma', 'LangChain', 'Pinecone', 'tRPC', 'Zod', 'Kinde', 'Stripe', 'shadcn - ui',],
+        url: "pagemind.app"
+    }
+]
 
 const projectArchivePage = () => {
 
@@ -18,16 +28,32 @@ const projectArchivePage = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="border-b border-slate-300/20 last:border-none">
+                        <tr className="border-b border-slate-300/20">
                             <td className="py-4 pr-4 align-top text-sm">
                                 <div className="translate-y-px">2023</div>
                             </td>
                             <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
-                                <div className="block sm:hidden">
-                                    <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-slate-200 focus-visible:text-slate-300 sm:hidden group/link text-base">PageMind</a>
-                                </div>
+                                <div className="hidden sm:block text-sm">PageMind</div>
                             </td>
-                            </tr>                        
+                            <td className='py-4 pr-4 align-top hidden  lg:table-cell'>
+                                <ul className="flex -translate-y-1.5 flex-wrap">
+                                    <li className="my-1 mr-1.5">
+                                        <div className="flex items-center rounded-full bg-white/40 px-3 py-1 text-xs font-medium leading-5 text-slate-100">Nextjs</div>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td className="hidden py-4 align-top sm:table-cell">
+                                <ul className="translate-y-1">
+                                    <li className="mb-1 flex items-center">
+                                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-400 hover:text-white focus-visible:text-white text-sm" href="/" target="_blank">
+                                            <span>
+                                                <span className="inline-flex gap-1">pagemind.app <ArrowUp /></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
