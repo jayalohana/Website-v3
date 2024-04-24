@@ -10,14 +10,16 @@ const experience = [
     role:"Software Enginner Intern",
     company: 'Fibra Inc',
     description: 'Led the development of Fibra’s mobile app, integrating Figma design with React Native for the frontend and Firebase for backend solutions. Achieved a successful beta launch and increased initial user engagement by 20%. Implemented a community engagement platform within the app, featuring real-time chat and social posting functionalities.',
-    tools: ['React Native', 'Firebase', 'Figma', 'JIRA', 'Confluence', 'Bitbucket']
+    tools: ['React Native', 'Firebase', 'Figma', 'JIRA', 'Confluence', 'Bitbucket'],
+    url: "https://fibrainc.ca/",
   },
   {
     date: "Jan 2023-Sept 2023",
     role:"QA Analyst",
     company: "theScore",
     description: "Conducted cross-platform testing (Android, iOS, and Web) to assess readiness for production releases of sports media and betting apps. Developing test cases in TestRail and executed test plans to ensure high-quality feature delivery, and participated in bug triaging, priority assessment, and coverage tracking. Collaborating with cross-functional teams to ensure adherence to best practices and standards in QA, and working with the Test Automation team to review, prioritize and analyze test cases for automation results.",
-    tools: ["TestRail", "JIRA", "Confluence", "Charles Proxy"]
+    tools: ["TestRail", "JIRA", "Confluence", "Charles Proxy"],
+    url: "https://www.thescore.com/"
   },
   {
     date: "Jan 2023 - Present",
@@ -25,6 +27,7 @@ const experience = [
     company: 'CIBC',
     description: 'Reviewing and assessing confirmed fraud claims using internal systems and policies to minimize losses and mitigate fraud. Managing incoming claims by categorizing and accurately identifying fraudulent transactions, utilizing SharePoint for efficient assignment.',
     tools: [],
+    url: "https://www.cibc.com/"
 
   },
   { 
@@ -32,14 +35,17 @@ const experience = [
     company: 'CS HUB',
     role:'Software Developer',
     description: 'Designed and developed the backend architecture for the merch store, utilizing Spring Boot to create robust and scalable APIs and DAO layer. Implemented complex business logic and optimized database queries to enhance API performance, resulting in a 20% reduction in response time. Leveraged AWS and Docker for automated deployment and scaling of the backend infrastructure, reducing deployment time by 50% and increasing system uptime.',
-    tools: ['SpringBoot', 'REST APIs', 'PostgreSQL']
+    tools: ['SpringBoot', 'REST APIs', 'PostgreSQL'],
+    url: "https://www.cshub.tech"
     
   },
   {
     date: 'September 2022 - August 2023',
+    role: 'Mentor',
     company: 'York International',
     description:'Mentored students from Lassonde, providing guidance on EECS assignments, course selection, and university transition. Assisted students experiencing difficulties by developing support plans in collaboration with Student Support Staff.',
     tools: [],
+    url: "https://yorkinternational.yorku.ca/"
   }
 ]
 
@@ -55,11 +61,13 @@ const  Exp = () =>  {
           <div className='sm:col-span-5'>
             <h3 className='font-medium leading-snug text-slate-200'>
               <div>
-                <a className='inline-flex items-baseline font-medium leading-tight text-slate-200 flex-wrap gap-2 '>
-                  <span className='-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 lg:block mr-2'>{exp.role}</span>
+                <a className='inline-flex items-baseline font-medium leading-tight text-slate-200 flex-wrap gap-2 group/role' href={exp.url} target="_blank">
+                  <span className='-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 lg:block group-hover:text-slate-300'>{exp.role}</span>
                   <span>·</span>
-
-                  <span className='inline-block ml-2'>{exp.company}</span>
+                  <span className='inline-flex gap-1 group/role-hover:'>{exp.company} 
+                    <span className="group/role-hover:text-slate-300 group/role-hover:-translate-y-1 transition-transform">
+                      <ArrowUp />
+                    </span></span>
                 </a>
               </div>
             </h3>

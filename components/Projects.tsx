@@ -66,7 +66,7 @@ const Projects = () => {
                   </a>
                   
                 </h3>
-                <p className="mt-2 text-sm leading-normal">
+                <p className="mt-2 text-sm leading-normal text-slate-300">
                   {project.description}
                 </p>
                 <ul className='mt-2 flex flex-wrap'>
