@@ -103,7 +103,7 @@ const projectArchivePage = () => {
                     </thead>
                     <tbody>
                         {projects.map((project, index) => (
-                            <tr className="border-b border-slate-300/20">
+                            <tr className="border-b border-slate-300/20" key={index}>
                                 <td className="py-4 pr-4 align-top text-sm">
                                     <div className="translate-y-px">{project.year}</div>
                                 </td>
@@ -113,7 +113,7 @@ const projectArchivePage = () => {
                                 <td className='py-4 pr-4 align-top hidden  lg:table-cell'>
                                     <ul className="flex flex-wrap -translate-y-1.5 ">
                                     {project.tools.map((tool, toolIndex) => (
-                                        <li className="my-1 mr-1.5">
+                                    <li className="my-1 mr-1.5" key={toolIndex}>
                                             <div className="flex items-center rounded-full bg-white/40 px-3 py-1 text-xs font-medium leading-5 text-slate-100">{tool}</div>
                                         </li>
                                     ))}
