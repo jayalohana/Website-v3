@@ -18,6 +18,13 @@ const projects = [
         url: 'https://serverus.us'
     },
     {
+        year: '2024',
+        name: 'Flowrite',
+        tools: ['TypeScript', 'Node.js', 'Socket.io', 'MongoDB', 'React'],
+        urlName: 'Github',
+        url: 'https://github.com/aradhyas8/Flowrite'
+    },
+    {
         year: '2023',
         name: 'yuHacks',
         tools: ['TypeScript', 'Next.js', 'GraphQL', 'Node.js', 'Express', 'TailwindCSS', 'shadcn - ui'],
