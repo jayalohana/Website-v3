@@ -122,7 +122,7 @@ const projectArchivePage = () => {
                                 </td>
                                 <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                                     <div className="block sm:hidden">
-                                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 sm:hidden text-base group" href={project.url}>
+                                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 sm:hidden text-base group" href={project.url} target="_blank">
                                             <span className="flex gap-1 group-hover:text-white/70">{project.name}
                                                 <span className="group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1">
                                                     <ArrowUp />
