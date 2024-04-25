@@ -25,11 +25,11 @@ const projects = [
     url: "https://aradhyas8.github.io/Sorting-Algorithmn-Visualizer/"
   },
   {
-    title: 'TalkSmart',
-    description: 'TalkSmart is a web app that uses the OpenAI GPT-3 model to generate human-like text responses to user input.',
-    tools: ['Python'],
-    imagePath: '/static/Images/talksmart.jpg',
-    url: "https://github.com/aradhyas8/speech_assistant"
+    title: 'v1.aradhya.dev',
+    description: 'Previous version of portfolio site built with JavaScript, React, and Bootstrap.',
+    tools: ['JavaScript', 'React', 'Bootstrap', 'Netlify'],
+    imagePath: '/static/Images/v1.jpg',
+    url: "https://v1.aradhya.dev/"
   },
   {
     title: 'For The Horses',
