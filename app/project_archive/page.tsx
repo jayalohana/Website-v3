@@ -65,8 +65,8 @@ const projects = [
         year: '2023',
         name: 'Portfolio-v1',
         tools: ['javaScript', 'Bootstrap', 'React',],
-        url: 'htps://github.com/aradhyas8/Personal-Website-Template',
-         urlName: 'aradhya.dev'
+        url: 'htps://www.v1.aradhya.dev',
+         urlName: 'v1.aradhya.dev'
     },
     {
         year: '2022',
