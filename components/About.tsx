@@ -31,7 +31,7 @@ function About() {
                         <span>PageMind</span>
                     </a>, an
                 <span className='text-white font-bold mx-1'>AI-driven</span>
-                platform that revolutionizes how users interact with digital documents, and leading my team to a first-prize victory at yuHacks 2022 with a web application that significantly increased engagement for non-profits. These projects not only deepen my development skills but also highlight my ability to lead and innovate in the tech space.</p>
+                platform that revolutionizes how users interact with digital documents, and leading my team to a first-prize victory at yuHacks 2022 with a web application that significantly increased engagement for non-profits.</p>
             </div>
         </section>
     )

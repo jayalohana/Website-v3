@@ -61,7 +61,7 @@ const Projects = () => {
                 <h3>
                   <a className="group group-hover:text-white/70 inline-flex items-baseline font-medium leading-tight text-slate-200 gap-0.5" target='_blank' href={project.url}>
                     {project.title}
-                    <span className='group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1'>
+                    <span className='group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1 mt-0.5'>
                       <ArrowUp />
                     </span>
                     
