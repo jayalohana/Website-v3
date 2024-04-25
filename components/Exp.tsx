@@ -56,16 +56,16 @@ const  Exp = () =>  {
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">experience</h2>
       </div>
       {experience.map((exp, index) => (
-        <div key={index} className='group relative grid transition-all sm:grid-cols-7 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 border rounded-lg p-4 pb-4 mb-16'>
+        <div key={index} className='group relative grid transition-all sm:grid-cols-7 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover:opacity-50 border rounded-lg p-4 pb-4 mb-16'>
           <div className='mb-2 mt-1 text-xs font-semibold uppercase tracking-tight text-slate-500 sm:col-span-2'>{exp.date}</div>
           <div className='sm:col-span-5'>
-            <h3 className='font-medium leading-snug text-slate-200'>
+            <h3 className='font-medium leading-snug text-zinc-200'>
               <div>
-                <a className='inline-flex items-baseline font-medium leading-tight text-slate-200 flex-wrap gap-2 group/role' href={exp.url} target="_blank">
-                  <span className='-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 lg:block group-hover:text-slate-300'>{exp.role}</span>
+                <a className='inline-flex items-baseline font-medium leading-tigh flex-wrap gap-1 ' href={exp.url} target="_blank">
+                  <span className='-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 lg:block group-hover:text-white/70 '>{exp.role}</span>
                   <span>·</span>
-                  <span className='inline-flex gap-1 group/role-hover:'>{exp.company} 
-                    <span className="group/role-hover:text-slate-300 group/role-hover:-translate-y-1 transition-transform">
+                  <span className='inline-flex gap-0.5 group-hover:text-white/70 '>{exp.company} 
+                    <span className="group-hover:text-slate-300 group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1">
                       <ArrowUp />
                     </span></span>
                 </a>
@@ -85,8 +85,9 @@ const  Exp = () =>  {
         </div>
       ))}
       <a className='inline-flex items-center text-slate-200 leading-tight font-semibold group' href={Aradhya_Singh_Website}>
-        <span className='border-b border-transparent pb-px transition group-hover:text-white/70 flex gap-2'>
-          View Resume <ArrowUp />
+        <span className='border-b border-transparent pb-px transition group-hover:text-white/70 flex gap-1'>
+          View Resume 
+          <span className="group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1"><ArrowUp /></span>
         </span>
       </a>
     </section>

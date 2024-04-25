@@ -59,9 +59,11 @@ const Projects = () => {
             <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
               <div className="sm:order-2 sm:col-span-5">
                 <h3>
-                  <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 gap-2" target='_blank' href={project.url}>
+                  <a className="group group-hover:text-white/70 inline-flex items-baseline font-medium leading-tight text-slate-200 gap-0.5" target='_blank' href={project.url}>
                     {project.title}
-                    <ArrowUp />
+                    <span className='group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1'>
+                      <ArrowUp />
+                    </span>
                     
                   </a>
                   
@@ -82,9 +84,10 @@ const Projects = () => {
           </li>
         ))}
       </ul>
-      <a className='inline-flex items-center text-slate-200 leading-tight font-semibold group' href='/project_archive'>
-          <span className='border-b border-transparent pb-px transition group-hover:text-white/70 flex'>
-            View Full Project Archive <ArrowUp />
+      <a className='group inline-flex items-center text-slate-200 leading-tight font-semibold group-hover:text-white/70' href='/project_archive'>
+          <span className='border-b border-transparent pb-px transition flex gap-1'>
+            View Full Project Archive 
+          <span className='group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1'><ArrowUp /></span>
           </span>
       </a>
     </section>

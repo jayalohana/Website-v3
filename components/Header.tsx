@@ -15,7 +15,7 @@ function Header() {
         </h1>
         
         <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>Software Developer</h2>
-        <p className='mt-4 max-w-xs leading-normal'>I like to solve problems.</p>
+        <p className='mt-4 max-w-xs leading-normal text-slate-400'>I develop robust, scalable, and efficient backend systems that power seamless digital experiences.</p>
         <div className='nav hidden lg:block' aria-label='links'>
           <Navbar />
         </div>

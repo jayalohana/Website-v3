@@ -121,7 +121,16 @@ const projectArchivePage = () => {
                                     <div className="translate-y-px text-slate-400">{project.year}</div>
                                 </td>
                                 <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
-                                    <div className="sm:block text-sm">{project.name}</div>
+                                    <div className="block sm:hidden">
+                                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 sm:hidden text-base group">
+                                            <span className="flex gap-1 group-hover:text-white/70">{project.name}
+                                                <span className="group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1">
+                                                    <ArrowUp />
+                                            </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div className="hidden sm:block text-sm">{project.name}</div>
                                 </td>
                                 <td className='py-4 pr-4 align-top hidden  lg:table-cell'>
                                     <ul className="flex flex-wrap -translate-y-1.5 ">
