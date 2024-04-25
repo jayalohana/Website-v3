@@ -65,7 +65,7 @@ const  Exp = () =>  {
                   <span className='-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 lg:block group-hover:text-white/70 '>{exp.role}</span>
                   <span>·</span>
                   <span className='inline-flex gap-0.5 group-hover:text-white/70 '>{exp.company} 
-                    <span className="group-hover:text-slate-300 group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1">
+                    <span className="group-hover:text-slate-300 group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1 mt-0.5">
                       <ArrowUp />
                     </span></span>
                 </a>
