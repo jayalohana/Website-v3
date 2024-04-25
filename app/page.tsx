@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <MaxWidthWrapper className=" lg:flex lg:justify-between gap-5">
       <Header />
-       <Scroll />
+      <Scroll />
     </MaxWidthWrapper>
   );
 }

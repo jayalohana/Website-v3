@@ -106,9 +106,9 @@ const projectArchivePage = () => {
                 <a className="group mb-2 inline-flex items-center font-semibold leading-tight text-slate-100" href="/"><ArrowBack />Aradhya Singh</a>
                 <h1 className="text-4xl font-bold tracking-tight text-slate-300 sm:text-5xl mt-2">All Projects</h1>
                 <table className="mt-12 w-full border-collapse text-left">
-                    <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
+                    <thead className="sticky top-0 z-10 border-b  bg-white/10 px-6 py-5 backdrop-blur border border-white/10 ">
                         <tr>
-                            <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Year</th>
+                            <th className="py-4 pr-8 text-sm font-semibold text-slate-200 pl-2 rounded-tl">Year</th>
                             <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
                             <th className="py-4 pr-8 text-sm font-semibold text-slate-200 hidden lg:table-cell">Built with</th>
                             <th className="py-4 pr-8 text-sm font-semibold text-slate-200 hidden sm:table-cell">Link</th>
@@ -118,7 +118,7 @@ const projectArchivePage = () => {
                         {projects.map((project, index) => (
                             <tr className="border-b border-slate-300/20" key={index}>
                                 <td className="py-4 pr-4 align-top text-sm">
-                                    <div className="translate-y-px text-slate-400">{project.year}</div>
+                                    <div className="translate-y-px text-slate-400 pl-2">{project.year}</div>
                                 </td>
                                 <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                                     <div className="block sm:hidden">

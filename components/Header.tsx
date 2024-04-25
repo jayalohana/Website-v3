@@ -9,7 +9,6 @@ function Header() {
   return (
       <div className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24'>
       <div>
-        <Spotlight className='-top-40 left-0 md:left-60 md:-top-20' fill='white' />
         <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>
           <TextGenerateEffect words='Aradhya Singh' />
         </h1>
