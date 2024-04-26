@@ -36,7 +36,7 @@ const projects = [
         year: '2023',
         name: 'Data Visualizer',
         tools: ['Java', 'Java Swing'],
-        url: 'htps://github.com/aradhyas8/World-Bank-Analysis',
+        url: 'https://github.com/aradhyas8/World-Bank-Analysis',
         urlName: 'GitHub'
 
     },
@@ -44,63 +44,63 @@ const projects = [
         year: '2023',
         name: 'Vending Machine',
         tools: ['Java', 'Design Patterns'],
-        url: 'htps://github.com/aradhyas8/Vending-Machine',
+        url: 'https://github.com/aradhyas8/Vending-Machine',
         urlName: 'GitHub'
     },
     {
         year: '2023',
         name: 'API Generator',
         tools: ['JavaScript', 'Node.js', 'MongoDB', 'GraphQL', 'Express.js', 'React', 'Tailwind CSS'],
-        url: 'htps://github.com/aradhyas8/API-Generator',
+        url: 'https://github.com/aradhyas8/API-Generator',
         urlName: 'GitHub'
     },
     {
         year: '2023',
         name: 'CS Hub . Local Hack Day',
         tools: ['JavaScript', 'Bootstrap', 'React'],
-        url: 'htps://cshublhd.tech',
+        url: 'https://cshublhd.tech',
         urlName: 'cshublhd.tech'
     },
     {
         year: '2023',
         name: 'Portfolio-v1',
         tools: ['javaScript', 'Bootstrap', 'React',],
-        url: 'htps://www.v1.aradhya.dev',
+        url: 'https://v1.aradhya.dev',
          urlName: 'v1.aradhya.dev'
     },
     {
         year: '2022',
         name: 'FaceTrack',
         tools: ['Python', 'openCV', 'face_recognition',],
-        url: 'htps://github.com/aradhyas8/FaceRecognitionAttendaceProject',
+        url: 'https://github.com/aradhyas8/FaceRecognitionAttendaceProject',
         urlName: 'GitHub'
     },
     {
         year: '2022',
         name: 'Sorting Visualizer',
         tools: ['JavaScript', 'React'],
-        url: 'htps://aradhyas8.github.io/Sorting-Algorithmn-Visualizer',
+        url: 'https://aradhyas8.github.io/Sorting-Algorithmn-Visualizer',
         urlName: 'github.io/sort-vis'
     },
     {
         year: '2022',
         name: 'yuHacks 2022 - First Prize',
         tools: ['JavaScript', 'React', 'Node.js', 'Express'],
-        url: 'htps://github.com/aradhyas8/ForTheHorses',
+        url: 'https://github.com/aradhyas8/ForTheHorses',
          urlName: 'GitHub'
     },
     {
         year: '2022',
         name: 'TalkSmart',
         tools: ['Python'],
-        url: 'htps://github.com/aradhyas8/speech_assistant',
+        url: 'https://github.com/aradhyas8/speech_assistant',
         urlName: 'GitHub'
     },
     {
         year: '2022',
         name: 'Instagram Bot',
         tools: ['Python', 'Selenium'],
-        url: 'htps://github.com/aradhyas8/Instagram_bot',
+        url: 'https://github.com/aradhyas8/Instagram_bot',
         urlName: 'GitHub'
     }
 ]
