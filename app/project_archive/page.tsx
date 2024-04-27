@@ -26,6 +26,13 @@ const projects = [
     },
     {
         year: '2023',
+        name: 'Portfolio-v1',
+        tools: ['javaScript', 'Bootstrap', 'React',],
+        url: 'https://v1.aradhya.dev',
+        urlName: 'v1.aradhya.dev'
+    },
+    {
+        year: '2023',
         name: 'yuHacks',
         tools: ['TypeScript', 'Next.js', 'GraphQL', 'Node.js', 'Express', 'TailwindCSS', 'shadcn - ui'],
         url: 'https://yuhacks.ca',
@@ -62,13 +69,6 @@ const projects = [
         urlName: 'cshublhd.tech'
     },
     {
-        year: '2023',
-        name: 'Portfolio-v1',
-        tools: ['javaScript', 'Bootstrap', 'React',],
-        url: 'https://v1.aradhya.dev',
-         urlName: 'v1.aradhya.dev'
-    },
-    {
         year: '2022',
         name: 'FaceTrack',
         tools: ['Python', 'openCV', 'face_recognition',],
@@ -87,7 +87,7 @@ const projects = [
         name: 'yuHacks 2022 - First Prize',
         tools: ['JavaScript', 'React', 'Node.js', 'Express'],
         url: 'https://github.com/aradhyas8/ForTheHorses',
-         urlName: 'GitHub'
+        urlName: 'GitHub'
     },
     {
         year: '2022',
