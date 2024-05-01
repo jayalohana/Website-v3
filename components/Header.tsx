@@ -34,6 +34,7 @@ function Header() {
         <li className='mr-5 text-xs shrink-0'>
           <a className='block hover:text-slate-200' href='mailto:aradhyas1809@gmail.com'>
             <span><Email /></span>
+            <span></span>
           </a>
         </li>
       </ul>
