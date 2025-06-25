@@ -4,46 +4,46 @@ import {ArrowUp} from './ui/ArrowUp';
 
 const projects = [
   {
-    title: "PageMind",
-    description: "Elevate your PDF experience with PageMind! This innovative platform allows you to interact with your documents conversationally—upload your PDF, ask questions, and get precise answers instantly.",
-    tools: ['Next.js', 'Prisma', 'LangChain', 'Pinecone', 'tRPC', 'Zod'],
-    imagePath: '/static/Images/pagemind.png',
-    url:"https://www.pagemind.app",
+    title: "Ad Genie",
+    description: "A powerful AI-powered video ad generator using Akool AI and Convex. Built with Next.js and React, it helps marketers produce high-quality, branded video content from text prompts in seconds.",
+    tools: ['Next.js', 'React', 'Akool AI', 'Convex'],
+    imagePath: '/static/Images/adgenie.png',
+    url: "https://github.com/jayalohana/ad-genie",
   },
   {
-    title: "FaceTrack",
-    description: 'FaceTrack records facial attendance by detecting and recognizing faces in real-time video and saving the data to a .csv file with a timestamp.',
-    tools: ['Python','OpenCV'],
-    imagePath: '/static/Images/facetrack.jpg',
-    url:"https://github.com/aradhyas8/FaceRecognitionAttendaceProject"
+    title: "Notably",
+    description: "A task and note management app built with TypeScript and MongoDB. Offers clean UI, project tagging, and persistent data — ideal for daily productivity.",
+    tools: ['TypeScript', 'React.js', 'Node.js', 'MongoDB'],
+    imagePath: '/static/Images/notably.png',
+    url: "https://github.com/jayalohana/Notably",
   },
   {
-    title:'Sorting Algorithm Visualizer',
-    description: 'This web app visualizes sorting algorithms such as bubble sort, selection sort, insertion sort, quick sort, and merge sort.',
-    tools: ['React', 'JavaScript'],
-    imagePath: '/static/Images/sorting.jpg',
-    url: "https://aradhyas8.github.io/Sorting-Algorithmn-Visualizer/"
+    title: "CoWrite",
+    description: "A real-time collaborative editor powered by Socket.io and Quill. Enables live editing across users, with custom formatting and MongoDB persistence.",
+    tools: ['TypeScript', 'React.js', 'Socket.io', 'MongoDB', 'Material-UI', 'Quill'],
+    imagePath: '/static/Images/cowrite.png',
+    url: "https://github.com/jayalohana/CoWrite",
   },
   {
-    title: 'v1.aradhya.dev',
-    description: 'Previous version of portfolio site built with JavaScript, React, and Bootstrap.',
-    tools: ['JavaScript', 'React', 'Bootstrap', 'Netlify'],
-    imagePath: '/static/Images/v1.jpg',
-    url: "https://v1.aradhya.dev/"
+    title: "ResumeGenie",
+    description: "An AI-powered resume builder that turns experience into polished resumes. Includes PDF export and real-time editing via templates.",
+    tools: ['Vite', 'React', 'Tailwind CSS', 'OpenAI API', 'PDFKit'],
+    imagePath: '/static/Images/resumegenie.png',
+    url: "https://github.com/jayalohana/resumegenie",
   },
   {
-    title: 'For The Horses',
-    description: 'Animal rescue app that won first prize at YUHacks 2022 with search, dashboard, adopter matching and messaging features.',
-    tools: ['React', 'Node.js', 'MongoDB'],
-    imagePath: '/static/Images/forhorses.jpg',
-    url: "https://github.com/aradhyas8/ForTheHorses"
+    title: "Schizophrenia Society Website",
+    description: "Responsive club website built with React and Tailwind CSS. Designed for accessibility, clean UX, and fast load times on all devices.",
+    tools: ['React.js', 'Tailwind CSS'],
+    imagePath: '/static/Images/ssy.png',
+    url: "https://github.com/jayalohana/schizophrenia-society-site",
   },
   {
-    title: 'Data Visualizer',
-    description: 'EECS 3311 project for York University in Fall 2022 analyzing World Bank API data in visual format.',
-    tools: ['Java', 'REST APIs', 'Java Swing'],
-    imagePath: '/static/Images/3311.jpg',
-    url:"https://github.com/aradhyas8/World-Bank-Analysis"
+    title: "DevDash",
+    description: "A developer dashboard that tracks GitHub commits, open PRs, and issue activity with real-time charts. Includes dark mode and modular widgets.",
+    tools: ['React', 'TypeScript', 'Redux Toolkit', 'Chart.js', 'Tailwind CSS'],
+    imagePath: '/static/Images/devdash.png',
+    url: "https://github.com/jayalohana/devdash",
   }
 ]
 

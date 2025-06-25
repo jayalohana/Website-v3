@@ -7,35 +7,44 @@ function About() {
                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">about</h2>
             </div>
             <div className='text-slate-300 border rounded-xl py-5 px-5'>
-                <p className='mb-4'>Graduating from
+                <p className='mb-4'>
+                    I’m currently pursuing a Bachelor of Arts in Computer Science at
                     <a className='text-white font-bold mx-1' href="https://www.yorku.ca/" target='_blank'>
-                        <span>York University</span>
-                    </a>
-                    with a Bachelor of Science in Computer Science, My career has spanned roles such as a Software Engineer Intern at
-                    <a className='text-white font-bold mx-1' href="https://fibrainc.ca/" target='_blank'>
-                        <span>Fibra Inc.</span>
-                    </a>
-                    and a Quality Engineering Intern at
-                    <a className='text-white font-bold mx-1' href="https://www.thescore.com/" target='_blank'>
-                        <span>theScore</span>
-                    </a>
-                    in Toronto. In these positions, I have led initiatives to optimize quality assurance processes and engineer robust software solutions, always focusing on innovation and user satisfaction.</p>
+                        York University
+                    </a>, where I’ve developed a strong foundation in full-stack development and quality engineering.
+                    My professional journey includes roles as a Software Developer Intern at
+                    <a className='text-white font-bold mx-1' href="https://www.gaotek.com/" target='_blank'>
+                        GAOtek Inc.
+                    </a> and a Quality Assurance Analyst at
+                    <a className='text-white font-bold mx-1' href="https://transformersacademy.com/" target='_blank'>
+                        Transformers Academy
+                    </a>. Through these experiences, I’ve optimized testing workflows, implemented full-stack features, and championed user experience improvements.
+                </p>
 
-                <p className='mb-4'>I excel in 
-                <span className='text-white font-bold mx-1'>backend development</span>,
-                proficiently utilizing technologies such as Node.js, Spring Boot, and Python, alongside databases like PostgreSQL and MySQL. My toolkit is further enhanced by expertise in developer tools like AWS, Docker, and GraphQL, which I leverage to build scalable, efficient, and reliable systems.</p>
+                <p className='mb-4'>
+                    My technical toolkit includes
+                    <span className='text-white font-bold mx-1'>Java, Python, JavaScript, and TypeScript</span>. I specialize in building scalable and performant applications using
+                    <span className='text-white font-bold mx-1'>React.js, Node.js, Next.js, MongoDB, and REST APIs</span>. I also leverage tools like AWS, GraphQL, and Docker to bring robust solutions to life.
+                </p>
 
-
-                <p className='mb-4'>My project work includes creating
-                    <a className='text-white font-bold mx-1' href="https://pagemind.app/" target='_blank'>
-                        <span>PageMind</span>
+                <p className='mb-4'>
+                    Some of my recent projects include
+                    <a className='text-white font-bold mx-1' href="https://github.com/jayalohana/PageMind" target='_blank'>
+                        PageMind
                     </a>, an
-                <span className='text-white font-bold mx-1'>AI-driven</span>
-                platform that revolutionizes how users interact with digital documents, and leading my team to a first-prize victory at yuHacks 2022 with a web application that significantly increased engagement for non-profits.</p>
+                    <span className='text-white font-bold mx-1'>AI-powered PDF assistant</span>
+                    that enables real-time interaction with documents, and
+                    <a className='text-white font-bold mx-1' href="https://github.com/jayalohana/Notably" target='_blank'>
+                        Notably
+                    </a>, a
+                    <span className='text-white font-bold mx-1'>TypeScript-based</span> task and note management app. I’m passionate about using technology to create intuitive tools that empower users.
+                </p>
             </div>
         </section>
     )
 }
+
+
 
 export const about = [
     {

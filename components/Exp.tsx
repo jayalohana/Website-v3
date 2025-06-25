@@ -1,52 +1,74 @@
 import {ArrowUp} from "./ui/ArrowUp"
 //@ts-ignore
-import Aradhya_Singh_Website from '../public/static/Resume/Aradhya_Singh_Website.pdf'
+import Jaya_Lohana_Website from '../public/static/Resume/Jaya_Lohana_Website.pdf'
 
 
 
 const experience = [
   {
-    date: 'Jan 2023 - Sept 2023',
-    role:"Software Enginner Intern",
-    company: 'Fibra Inc',
-    description: 'Led the development of Fibra’s mobile app, integrating Figma design with React Native for the frontend and Firebase for backend solutions. Achieved a successful beta launch and increased initial user engagement by 20%. Implemented a community engagement platform within the app, featuring real-time chat and social posting functionalities.',
-    tools: ['React Native', 'Firebase', 'Figma', 'JIRA', 'Confluence', 'Bitbucket'],
-    url: "https://fibrainc.ca/",
+    date: 'September 2022 – April 2025',
+    role: 'Software Developer',
+    company: 'Schizophrenia Society at York',
+    description:
+      'Maintained and updated the club website to ensure accessibility and responsiveness. Created digital content to support the club’s mission, resulting in increased engagement and reach.',
+    tools: ['HTML', 'CSS', 'JavaScript', 'React.js'],
+    // url: 'https://ssy.ca',
   },
   {
-    date: "Jan 2023-Sept 2023",
-    role:"QA Analyst",
-    company: "theScore",
-    description: "Conducted cross-platform testing (Android, iOS, and Web) to assess readiness for production releases of sports media and betting apps. Developing test cases in TestRail and executed test plans to ensure high-quality feature delivery, and participated in bug triaging, priority assessment, and coverage tracking. Collaborating with cross-functional teams to ensure adherence to best practices and standards in QA, and working with the Test Automation team to review, prioritize and analyze test cases for automation results.",
-    tools: ["TestRail", "JIRA", "Confluence", "Charles Proxy"],
-    url: "https://www.thescore.com/"
+    date: 'April 2024 – August 2024',
+    role: 'Quality Assurance Analyst',
+    company: 'Transformers Academy',
+    description:
+      'Led the deployment of automated testing tools using Selenium and Python, streamlining content validation and reducing manual testing time by 40%. Integrated a real-time feedback system with JavaScript, React.js, and Node.js, improving user satisfaction by 25%.',
+    tools: ['Selenium', 'Python', 'JavaScript', 'React.js', 'Node.js'],
+    // url: 'https://transformersacademy.com/',
   },
   {
-    date: "Jan 2023 - Present",
-    role: 'Business Analyst',
-    company: 'CIBC',
-    description: 'Reviewing and assessing confirmed fraud claims using internal systems and policies to minimize losses and mitigate fraud. Managing incoming claims by categorizing and accurately identifying fraudulent transactions, utilizing SharePoint for efficient assignment.',
-    tools: [],
-    url: "https://www.cibc.com/"
-
+    date: 'April 2023 – August 2023',
+    role: 'Software Developer Intern',
+    company: 'GAOtek Inc.',
+    description:
+      'Built scalable software features using Java and React.js, enhancing performance and reducing bugs by 20%. Developed a real-time feedback system with Node.js and REST APIs to improve usability and responsiveness.',
+    tools: ['Java', 'React.js', 'Node.js', 'REST APIs'],
+    // url: 'https://www.gaotek.com/',
   },
-  { 
-    date: 'October 2022-April 2023',
-    company: 'CS HUB',
-    role:'Software Developer',
-    description: 'Designed and developed the backend architecture for the merch store, utilizing Spring Boot to create robust and scalable APIs and DAO layer. Implemented complex business logic and optimized database queries to enhance API performance, resulting in a 20% reduction in response time. Leveraged AWS and Docker for automated deployment and scaling of the backend infrastructure, reducing deployment time by 50% and increasing system uptime.',
-    tools: ['SpringBoot', 'REST APIs', 'PostgreSQL'],
-    url: "https://www.cshub.tech"
-    
+  
+  {
+    date: 'May 2023 – December 2023',
+    role: 'Front-End Developer',
+    company: 'yuHacks 2023',
+    description:
+      'Developed modular, scalable components using React.js, TypeScript, and Next.js for the hackathon platform. Integrated real-time features with GraphQL and Vue.js, boosting user engagement and delivering live data updates.',
+    tools: ['React.js', 'TypeScript', 'Next.js', 'Vue.js', 'GraphQL'],
+    // url: 'https://yuhacks.io',
   },
   {
-    date: 'September 2022 - August 2023',
-    role: 'Mentor',
+    date: 'May 2023 – April 2024',
+    role: 'STEMing Up Intern',
+    company: 'Her Volution',
+    description:
+      'Mentored 10 volunteers and coordinated 5 large-scale STEM events with 200+ attendees. Created outreach content and leveraged collaborative tools to strengthen community engagement.',
+    tools: ['Canva', 'Zoom', 'Google Workspace'],
+    // url: 'https://www.hervolution.org/',
+  },
+  {
+    date: 'September 2022 – May 2023',
+    role: 'Community Engagement Volunteer',
     company: 'York International',
-    description:'Mentored students from Lassonde, providing guidance on EECS assignments, course selection, and university transition. Assisted students experiencing difficulties by developing support plans in collaboration with Student Support Staff.',
-    tools: [],
-    url: "https://yorkinternational.yorku.ca/"
-  }
+    description:
+      'Promoted events through social media and class visits, reaching over 25 students weekly. Provided peer mentorship and facilitated global outreach sessions that supported personal and academic development.',
+    tools: ['Instagram', 'Google Meet', 'Microsoft Teams'],
+    // url: 'https://yorkinternational.yorku.ca/',
+  },
+  {
+    date: 'July 2022 – Present',
+    role: 'Vice President (Advocacy)',
+    company: 'Many Green Hands',
+    description:
+      'Led digital advocacy initiatives including webinars, blogs, and social campaigns to promote sustainability. Produced and managed online content aligned with the organization’s goals.',
+    tools: ['WordPress', 'Instagram', 'Canva'],
+    // url: 'https://www.instagram.com/manygreenhands/',
+  },
 ]
 
 const  Exp = () =>  {
@@ -66,7 +88,7 @@ const  Exp = () =>  {
                   <span>·</span>
                   <span className='inline-flex gap-0.5 group-hover:text-white/70 '>{exp.company} 
                     <span className="group-hover:text-slate-300 group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1 mt-0.5">
-                      <ArrowUp />
+                      {/* <ArrowUp /> */}
                     </span></span>
                 </a>
               </div>
@@ -84,7 +106,7 @@ const  Exp = () =>  {
           </div>
         </div>
       ))}
-      <a className='inline-flex items-center text-slate-200 leading-tight font-semibold group' href={Aradhya_Singh_Website}>
+      <a className='inline-flex items-center text-slate-200 leading-tight font-semibold group' href={Jaya_Lohana_Website}>
         <span className='border-b border-transparent pb-px transition group-hover:text-white/70 flex gap-1'>
           View Resume 
           <span className="group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1"><ArrowUp /></span>
