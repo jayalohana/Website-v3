@@ -1,5 +1,5 @@
 import { ArrowUp } from "./ui/ArrowUp";
-//@ts-ignore
+// @ts-ignore
 import Jaya_Lohana_Website from '../public/static/Resume/Jaya_Lohana_Website.pdf';
 
 type Experience = {
@@ -8,7 +8,6 @@ type Experience = {
   company: string;
   description: string;
   tools: string[];
-  url?: string; // ✅ Optional url
 };
 
 const experience: Experience[] = [
@@ -19,7 +18,6 @@ const experience: Experience[] = [
     description:
       'Maintained and updated the club website to ensure accessibility and responsiveness. Created digital content to support the club’s mission, resulting in increased engagement and reach.',
     tools: ['HTML', 'CSS', 'JavaScript', 'React.js'],
-    // url: 'https://ssy.ca',
   },
   {
     date: 'April 2024 – August 2024',
@@ -28,7 +26,6 @@ const experience: Experience[] = [
     description:
       'Led the deployment of automated testing tools using Selenium and Python, streamlining content validation and reducing manual testing time by 40%. Integrated a real-time feedback system with JavaScript, React.js, and Node.js, improving user satisfaction by 25%.',
     tools: ['Selenium', 'Python', 'JavaScript', 'React.js', 'Node.js'],
-    // url: 'https://transformersacademy.com/',
   },
   {
     date: 'April 2023 – August 2023',
@@ -37,7 +34,6 @@ const experience: Experience[] = [
     description:
       'Built scalable software features using Java and React.js, enhancing performance and reducing bugs by 20%. Developed a real-time feedback system with Node.js and REST APIs to improve usability and responsiveness.',
     tools: ['Java', 'React.js', 'Node.js', 'REST APIs'],
-    // url: 'https://www.gaotek.com/',
   },
   {
     date: 'May 2023 – December 2023',
@@ -46,7 +42,6 @@ const experience: Experience[] = [
     description:
       'Developed modular, scalable components using React.js, TypeScript, and Next.js for the hackathon platform. Integrated real-time features with GraphQL and Vue.js, boosting user engagement and delivering live data updates.',
     tools: ['React.js', 'TypeScript', 'Next.js', 'Vue.js', 'GraphQL'],
-    // url: 'https://yuhacks.io',
   },
   {
     date: 'May 2023 – April 2024',
@@ -55,7 +50,6 @@ const experience: Experience[] = [
     description:
       'Mentored 10 volunteers and coordinated 5 large-scale STEM events with 200+ attendees. Created outreach content and leveraged collaborative tools to strengthen community engagement.',
     tools: ['Canva', 'Zoom', 'Google Workspace'],
-    // url: 'https://www.hervolution.org/',
   },
   {
     date: 'September 2022 – May 2023',
@@ -64,7 +58,6 @@ const experience: Experience[] = [
     description:
       'Promoted events through social media and class visits, reaching over 25 students weekly. Provided peer mentorship and facilitated global outreach sessions that supported personal and academic development.',
     tools: ['Instagram', 'Google Meet', 'Microsoft Teams'],
-    // url: 'https://yorkinternational.yorku.ca/',
   },
   {
     date: 'July 2022 – Present',
@@ -73,7 +66,6 @@ const experience: Experience[] = [
     description:
       'Led digital advocacy initiatives including webinars, blogs, and social campaigns to promote sustainability. Produced and managed online content aligned with the organization’s goals.',
     tools: ['WordPress', 'Instagram', 'Canva'],
-    // url: 'https://www.instagram.com/manygreenhands/',
   },
 ];
 
@@ -91,28 +83,15 @@ const Exp = () => {
           </div>
           <div className="sm:col-span-5">
             <h3 className="font-medium leading-snug text-zinc-200">
-              <div>
-                {exp.url ? (
-                  <a className="inline-flex items-baseline font-medium leading-tight flex-wrap gap-1" href={exp.url} target="_blank" rel="noopener noreferrer">
-                    <span className="group-hover:text-white/70">{exp.role}</span>
-                    <span>·</span>
-                    <span className="inline-flex gap-0.5 group-hover:text-white/70">
-                      {exp.company}
-                      <span className="group-hover:text-slate-300 group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1 mt-0.5">
-                        {/* <ArrowUp /> */}
-                      </span>
-                    </span>
-                  </a>
-                ) : (
-                  <span className="inline-flex items-baseline font-medium leading-tight flex-wrap gap-1">
-                    <span>{exp.role}</span>
-                    <span>·</span>
-                    <span>{exp.company}</span>
-                  </span>
-                )}
+              <div className="inline-flex items-baseline font-medium leading-tight flex-wrap gap-1">
+                <span>{exp.role}</span>
+                <span>·</span>
+                <span className="inline-flex gap-0.5">{exp.company}</span>
               </div>
             </h3>
-            <p className="mt-2 text-sm leading-normal tracking-wide text-slate-300">{exp.description}</p>
+            <p className="mt-2 text-sm leading-normal tracking-wide text-slate-300">
+              {exp.description}
+            </p>
             <ul className="mt-2 flex flex-wrap">
               {exp.tools.map((tool, toolIndex) => (
                 <li key={toolIndex} className="mr-1.5 mt-2">
