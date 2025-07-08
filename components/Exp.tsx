@@ -1,10 +1,17 @@
-import {ArrowUp} from "./ui/ArrowUp"
+import { ArrowUp } from "./ui/ArrowUp";
 //@ts-ignore
-import Jaya_Lohana_Website from '../public/static/Resume/Jaya_Lohana_Website.pdf'
+import Jaya_Lohana_Website from '../public/static/Resume/Jaya_Lohana_Website.pdf';
 
+type Experience = {
+  date: string;
+  role: string;
+  company: string;
+  description: string;
+  tools: string[];
+  url?: string; // ✅ Optional URL
+};
 
-
-const experience = [
+const experience: Experience[] = [
   {
     date: 'September 2022 – April 2025',
     role: 'Software Developer',
@@ -32,7 +39,6 @@ const experience = [
     tools: ['Java', 'React.js', 'Node.js', 'REST APIs'],
     // url: 'https://www.gaotek.com/',
   },
-  
   {
     date: 'May 2023 – December 2023',
     role: 'Front-End Developer',
@@ -69,72 +75,65 @@ const experience = [
     tools: ['WordPress', 'Instagram', 'Canva'],
     // url: 'https://www.instagram.com/manygreenhands/',
   },
-]
+];
 
-const  Exp = () =>  {
+const Exp = () => {
   return (
     <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">experience</h2>
       </div>
       {experience.map((exp, index) => (
-        <div key={index} className='group relative grid transition-all sm:grid-cols-7 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover:opacity-50 border rounded-lg p-4 pb-4 mb-16'>
-          <div className='mb-2 mt-1 text-xs font-semibold uppercase tracking-tight text-slate-500 sm:col-span-2'>{exp.date}</div>
-          <div className='sm:col-span-5'>
-            <h3 className='font-medium leading-snug text-zinc-200'>
+        <div key={index} className="group relative grid transition-all sm:grid-cols-7 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover:opacity-50 border rounded-lg p-4 pb-4 mb-16">
+          <div className="mb-2 mt-1 text-xs font-semibold uppercase tracking-tight text-slate-500 sm:col-span-2">
+            {exp.date}
+          </div>
+          <div className="sm:col-span-5">
+            <h3 className="font-medium leading-snug text-zinc-200">
               <div>
-                <a className='inline-flex items-baseline font-medium leading-tigh flex-wrap gap-1 ' href={exp.url} target="_blank">
-                  <span className='-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 lg:block group-hover:text-white/70 '>{exp.role}</span>
-                  <span>·</span>
-                  <span className='inline-flex gap-0.5 group-hover:text-white/70 '>{exp.company} 
-                    <span className="group-hover:text-slate-300 group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1 mt-0.5">
-                      {/* <ArrowUp /> */}
-                    </span></span>
-                </a>
+                {exp.url ? (
+                  <a className="inline-flex items-baseline font-medium leading-tight flex-wrap gap-1" href={exp.url} target="_blank" rel="noopener noreferrer">
+                    <span className="group-hover:text-white/70">{exp.role}</span>
+                    <span>·</span>
+                    <span className="inline-flex gap-0.5 group-hover:text-white/70">
+                      {exp.company}
+                      <span className="group-hover:text-slate-300 group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1 mt-0.5">
+                        {/* <ArrowUp /> */}
+                      </span>
+                    </span>
+                  </a>
+                ) : (
+                  <span className="inline-flex items-baseline font-medium leading-tight flex-wrap gap-1">
+                    <span>{exp.role}</span>
+                    <span>·</span>
+                    <span>{exp.company}</span>
+                  </span>
+                )}
               </div>
             </h3>
-            <p className='mt-2 text-sm leading-normal tracking-wide text-slate-300'>
-             {exp.description}
-            </p>
-            <ul className='mt-2 flex flex-wrap'>
-          {exp.tools.map((tool, toolIndex) => (
-            <li key={toolIndex} className='mr-1.5 mt-2'>
-              <div className='flex items-center rounded-full bg-white/40 px-3 py-1 text-xs font-medium leading-5 text-slate-100'>{tool}</div>
-            </li>
-          ))}
+            <p className="mt-2 text-sm leading-normal tracking-wide text-slate-300">{exp.description}</p>
+            <ul className="mt-2 flex flex-wrap">
+              {exp.tools.map((tool, toolIndex) => (
+                <li key={toolIndex} className="mr-1.5 mt-2">
+                  <div className="flex items-center rounded-full bg-white/40 px-3 py-1 text-xs font-medium leading-5 text-slate-100">
+                    {tool}
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       ))}
-      <a className='inline-flex items-center text-slate-200 leading-tight font-semibold group' href={Jaya_Lohana_Website}>
-        <span className='border-b border-transparent pb-px transition group-hover:text-white/70 flex gap-1'>
-          View Resume 
-          <span className="group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1"><ArrowUp /></span>
+      <a className="inline-flex items-center text-slate-200 leading-tight font-semibold group" href={Jaya_Lohana_Website}>
+        <span className="border-b border-transparent pb-px transition group-hover:text-white/70 flex gap-1">
+          View Resume
+          <span className="group-hover:-translate-y-1 group-hover:transition-transform group-hover:translate-x-1">
+            <ArrowUp />
+          </span>
         </span>
       </a>
     </section>
-  )
-}
+  );
+};
 
-export default Exp
-
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
-//daily
+export default Exp;
