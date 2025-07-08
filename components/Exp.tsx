@@ -8,7 +8,7 @@ type Experience = {
   company: string;
   description: string;
   tools: string[];
-  url?: string; // ✅ Optional URL
+  url?: string; // ✅ Optional url
 };
 
 const experience: Experience[] = [
@@ -83,6 +83,7 @@ const Exp = () => {
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">experience</h2>
       </div>
+
       {experience.map((exp, index) => (
         <div key={index} className="group relative grid transition-all sm:grid-cols-7 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover:opacity-50 border rounded-lg p-4 pb-4 mb-16">
           <div className="mb-2 mt-1 text-xs font-semibold uppercase tracking-tight text-slate-500 sm:col-span-2">
@@ -124,6 +125,7 @@ const Exp = () => {
           </div>
         </div>
       ))}
+
       <a className="inline-flex items-center text-slate-200 leading-tight font-semibold group" href={Jaya_Lohana_Website}>
         <span className="border-b border-transparent pb-px transition group-hover:text-white/70 flex gap-1">
           View Resume
