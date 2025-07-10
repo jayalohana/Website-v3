@@ -4,7 +4,7 @@ import Jaya_Lohana_Website from '../public/static/Resume/Jaya_Lohana_Website.pdf
 
 type Experience = {
   date: string;
-  role: string;
+  role: string; 
   company: string;
   description: string;
   tools: string[];
@@ -118,3 +118,4 @@ const Exp = () => {
 };
 
 export default Exp;
+//daily
