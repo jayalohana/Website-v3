@@ -155,5 +155,3 @@ const projectArchivePage = () => {
 }
 
 export default projectArchivePage
-
-//daily
